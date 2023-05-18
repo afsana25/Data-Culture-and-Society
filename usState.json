@@ -5385,6 +5385,8 @@
         "PerCapita": 62005,
         "PovertyRate": 0.091700003,
         "educationScore":65.56999969,
+        "Male": 38,
+        "Female":48,
         "Criteria": "LowerProverty" 
       }
     },
