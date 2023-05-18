@@ -1,0 +1,80 @@
+.hover-content{
+    top: 0;
+    left: 0;
+    max-width: 300px;
+    background-color: white;
+    padding: .5em;
+    opacity: 0;
+    /* need to remove pointer events so that
+    the tooltip doesn't interrupt the mouse events */
+    pointer-events: none;
+    border-radius: 5px;
+    box-shadow: 0 0 7px gainsboro;
+  }
+  
+  .hover-content.visible{
+    opacity: 1;
+  }
+
+  body {
+    font: 10px sans-serif;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .dot {
+    stroke: #000;
+  }
+  .line{
+  stroke:dimgrey;
+  stroke-width:2px;
+  }
+  .tooltip{
+  position:absolute;
+  width:auto;
+  border-radius:10px;
+  height:auto;
+  font-family: calibri;
+  font-weight:bold;
+  font-size: 14px;
+  background-color: lightgrey;
+  border:1px solid grey;
+  text-align: center;
+  padding:10px;
+  }
+  
+
+  path:hover {
+    fill-opacity: .7;
+  }
+  
+  /* Style for Custom Tooltip */
+  div.tooltip {   
+     position: absolute;           
+    text-align: center;           
+    width: 60px;                  
+    height: 28px;                 
+    padding: 2px;             
+    font: 12px sans-serif;        
+    background: white;   
+    border: 0px;      
+    border-radius: 8px;           
+    pointer-events: none;         
+  }
+          
+  Legend Font Style
+  body {
+    font: 11px sans-serif;
+  }
+          
+  /* Legend Position Style */
+  .legend {
+    position:absolute;
+    left:800px;
+    top:350px;
+  }
