@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<title>Data Privacy and Legitness?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./final_style.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="viz-top">
+  <div class="viz-bar viz-white viz-padding viz-card" style="letter-spacing:4px;">
+    
+
+    <a href="#Afsana_Mimi" class="viz-bar-item viz-button">Data, Culture, and, Society, Data 74000, Afsana Mimi</a>
+    
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="viz-right viz-hide-small">
+      <!-- <a href="#Afsana_Mimi" class="viz-bar-item viz-button"></a> -->
+      <a href="#Introduction" class="viz-bar-item viz-button">Introduction</a>
+      <a href="#Methodology" class="viz-bar-item viz-button">Methodology</a>
+      <!-- <a href="#Mapvisulaization1" class="viz-bar-item viz-button">US Poverty Choropleth Map </a> -->
+      <a href="#Visualizations" class="viz-bar-item viz-button">Visualizations</a>
+      <!-- <a href="#Bar Chart" class="viz-bar-item viz-button">Bar Chart</a> -->
+      <a href="#Result" class="viz-bar-item viz-button">Result</a>
+      <a href="#Conclusion" class="viz-bar-item viz-button"> Conclusion</a>
+      <a href="#DataSource" class="viz-bar-item viz-button">Data Sources</a>
+      
+    </div>
+  </div>
+</div>
+
+
+<header class="viz-display-container viz-content viz-wide" style="max-width:1100px;min-width:500px" id="Afsana_Mimi">
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="viz-content" style="max-width:1100px">
+
+  <!-- Introduction Section -->
+  <div class="viz-row viz-padding-64">
+    <div class=" viz-padding-large">
+
+      <div>
+        <blockquote><blockquote><blockquote> <h2>The Choropleth Map of USA States Based on Provety Rate, Per Capita, Gender Having Bachelor or higher Degree</h2> </blockquote></blockquote><blockquote></blockquote></blockquote>
+      </div>
+       
+     <style>.embed-container {position: relative; padding-bottom: 100%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 20; left: 0; width: 200%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="NYC" src="index4.html"></iframe></div>
+    
+    </div>
+
+    <div class="viz-row m6 viz-padding-large" id="Introduction">
+      <h2 class="viz-center"> Data Privacy and Legitness? </h2>
+
+      <h3 class="viz-center"> Afsana Mimi</h3>
+      <h5 class="viz-center">Introduction</h5>
+      <p class="viz-large">
+     
+        The project's motivation is to show whether the data is legit based on Bookings.edu data of gender with ages ranging from 25 years to 34 years old with  bachelor degrees or higher
+         education in US states, US census data for per capita income, worldpopulationreview.com data of poverty rate and the "statistica" education data from 1940 to 2021 based on gender. 
+         Most of the time, we believe government data is accurate, but is it true? In this project, we will discuss whether we see the data is biased or whether any power or privilege plays a role. 
+         In the back behind any data presentation or visualization, we don't know how data collection has been made. Is it collected ideally or not? Can the data be highly influenced by power
+          and position? In this project, we will use these data sources to discuss 
+        whether the data are legit and how safe our data is based on some visualizations such as choropleth map,  time series, and bar charts and also discuss about the result of the visualizations.
+
+
+    </p>
+      
+      </div>
+  </div>
+</div>
+
+<hr>
+
+  <!-- Linear Rigression of Provety Vs Education Score Section -->
+  <!-- Page content -->
+  <div class="viz-content" style="max-width:1100px">
+
+    <!-- Introduction Section -->
+    <div class="viz-row" id="Methodology">
+      <h5 class="viz-center"> Methodology</h5><br>
+      <div>
+       
+        <h6> Data Collection and Manipulation:</h6>
+        <p class="viz-large">All the data have been collected from the US census, worldpopulationreview.com, statistica, and Booking article. 
+          The per capita has been collected from the US census, and the poverty rate has been collected From worldpopulationreview.com in Excel format. 
+          The education data for bachelor's degrees or higher education based on gender has collected from the Bookings article. From the statistica website, 
+          the time series data has been collected. The data was cleaned and combined by SQL, and the null values were dropped for further analysis. Other data combinations
+           completed in Excel. In GEO-JSON format, the US state geographic
+           data has been collected and manually added the indicators such as per capita income, male and female education percentage rate, and poverty rate. </p><br>
+  <div>
+  
+   
+      <div>
+        <h5> Visulizations:</h5>
+  
+        <p class="viz-large"> 
+          The choropleth map of the United States has been completed in javascript using the d3. The geo JSON data file has been used to complete the map. The first visual, the choropleth map 
+          is based on the criteria of the poverty group, with the darker green color representing high poverty, the middle green color representing moderate poverty, and the less green color representing 
+          Lower poverty rates within the US. The map also added with hovering over the Percentage of males and females having a bachelor's degree or higher education (25 years to 34 years. The second visualization
+           is a time series to show how the progress rate of education based on gender.
+           The last four bar charts are created in Excel to show the five highest and lowest education attainment(Bachelor's degree or higher) states based on the Percentage of gender identities.
+        
+        </p><br>
+       
+      </div>
+  
+      <div>
+        <h5> Analyses:</h5>
+  
+        <p class="viz-large">  
+          In the first visualization, It is easily shown that Mississippi and Louisiana have the highest poverty Rate. The data source (worldpopulationreview.com) for Poverty Rate 
+          says that it has collected data from US Census but doesn't tell how it has been collected. It provides the poverty rate but doesn't show how the algorithm has performed or 
+          what kind of statistics are used to calculate the poverty Rate. The second time series data source(www.statista.com) has also collected from US Census data, and they also 
+          didn't discuss how they have been collected the data, Many of us easily believe that the US Census would be accurate, but we don't know how it has been collected, how the 
+          algorithm is used, or whether each state has a different calculation of the poverty Rate or any demographic indicators. Some may believe that US census 
+          data is government data and they will protect our data, but there are still questions about whether our information is safe or not. Is our privacy questionable or not? In the US 
+          choropleth map, I have used the percentage of having bachelor's degrees based on gender data source (www.brookings.edu) shows that they have collected data from the Department of 
+          Education. I have used the same data from the last four bar charts. The site doesn't discuss how these data were collected. Department of Education is also a government agency. It 
+          looks like government agencies are using our data to publish to anlyses for the users. These things lead to the questions about our data safety or privacy, 
+          how government agencies protect our data, who is contolling it, or how it is controlled.
+</p>
+        </div>
+  </div>
+  </div>
+  </div>
+
+  
+  <hr>
+  <!-- Linear Rigression of Provety Vs Education Score Section -->
+  <!-- Page content -->
+<div class="viz-content" style="max-width:1100px">
+
+  <!-- Introduction Section -->
+  <div class="viz-row" id="Visualizations">
+    <h5 class="viz-center"> Time Series of Male and Female having Bachelor degree</h5><br>
+    <div>
+      <div class="embed-container">
+       <img src="TimeSeries.png" alt = "Time Series" width="1200" height="1000" > </div>
+
+    <p> The time series shows the Percentage of the US population who completed a bachelor's degree from 1940 to 2021. It shows that the population of women with bachelor's degrees 
+      overtook the men's population with bachelor's degrees in 2014, and the women population with bachelor's degrees is still up in recent years.
+    </p>
+
+    <blockquote> <blockquote> <blockquote>
+
+    </blockquote> <blockquote></blockquote> </blockquote> </blockquote>
+
+    <h5 class="viz-center"> Bar charts of Male (Ages between 25 and 34 years) of having Bachelor degree in USA</h5><br>
+    <div>
+      <!-- <style>.embed-container {position: absolute; padding-bottom: 100%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 50; left: 0; width: 100%; height: 100%;} 
+      small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style> -->
+      <div class="embed-container">
+          <img src="Male_Per.png" alt = "Time Series" width="1200" height="1000" >
+        <!-- <iframe width="1000" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Visual" src="index9.html">
+      </iframe> -->
+    </div>
+
+    
+    <p> 
+      
+      These above bar charts show the five highest and lowest males (ages between 25 and 34) percentage having a bachelor's degree within the states. It shows that Massachusetts has the highest and Mississippi
+       has the lowest Percentage of the male population having a bachelor's degree or higher.
+
+    </p>
+
+    </div>
+
+    <p> 
+    </p>
+<blockquote> <blockquote> <blockquote></blockquote> </blockquote> </blockquote>
+
+    <h5 class="viz-center"> Bar charts of Female (Ages between 25 and 34 years) having Bachelor degree in the USA</h5><br>
+    <div>
+      <!-- <style>.embed-container {position: absolute; padding-bottom: 100%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 50; left: 0; width: 100%; height: 100%;} 
+      small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style> -->
+      <div class="embed-container">
+        <!-- <iframe width="1000" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Visual" src="index2.html">
+      </iframe> -->
+      <img src="Female_Per.png" alt = "Time Series" width="1200" height="1000" > 
+    
+    </div>
+
+    <p>
+
+      In the above bar charts, I have demonstrated the five highest and lowest Female (ages between 25 and 34) percentages having a bachelor's degree in the states, presenting that Massachusetts has the 
+      highest Percentage of the female population having a bachelor's degree or higher and Mississippi and Navada has the lowest of the female population having a bachelor's degree or higher.
+    </p>
+</div>
+</div>
+</div>
+
+
+      <hr>
+    <div class="viz-col l6 viz-padding-large">
+      <style>.embed-container {position: relative; padding-bottom: 100%; height: 0; max-width: 100%;}.embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style>
+
+       </div> 
+</div>
+</div>
+
+      <!-- Result Section -->
+
+
+
+  <!-- Methodology Section -->
+
+  <div class="viz-content" style="max-width:1100px">
+  <div class="viz-row viz-padding-64" id="Result">
+    <div class="viz-padding-large">
+      <h5 class="viz-center">Result</h5>
+    <div>
+      <br>
+
+    
+<div>
+      <!-- <body>
+    
+       
+            <div class="viz-row" id="Visualizations">
+    <h5 class="viz-center"> Bar charts of Male and Female having Bachelor degree in the USA</h5><br>
+    <div>
+      <div class="embed-container">
+       <img src="Female_Per.png" alt = "Time Series" width="1200" height="1000" > </div>
+            <body>
+            
+        <body>
+    
+       
+            <div class="viz-row" id="Visualizations">
+    <div>
+      <div class="embed-container">
+       <img src="Male_Per.png" alt = "Time Series" width="1200" height="1000" > </div> 
+            <body>
+
+             -->
+
+             <p>
+              The above result from the visualizations shows that Masachustas has less poverty rate(10%), and the bar charts also show that Masachustas has a high number of women and
+               men with bachelor's degrees. It tells that the more population have bachelor's degrees in the state, the state has a less poverty rate. Mississippi has a 20% proverty rate, 
+               and the percentages of males and females obtaining bachelor's degrees are less. Since we don't know how government agencies collect demographic data and the back behind algorithms 
+               from their sites, we can say from the visualizations that the Provery rate may have a negative relationship with the people of 
+              Women and Male with bachelor's degrees or more.
+             </p>
+            
+            
+
+        <blockquote> <blockquote><blockquote> <blockquote> <blockquote> <blockquote> <blockquote></blockquote>
+
+</div>
+</div>
+
+
+<p class="viz-large"> </p>
+
+
+
+</blockquote></blockquote></blockquote>
+</blockquote></blockquote></blockquote>
+</blockquote></blockquote></blockquote>
+
+
+    </blockquote>
+</div>
+   </form>
+</div>
+
+</div>
+
+    <div>
+
+    </div>
+
+
+</div>
+      
+    </div>
+    </div>
+    </div>
+
+
+
+<hr>
+
+ <!-- Conclusion Section -->
+ <div class="viz-content" style="max-width:1100px">
+ <div class="viz-row viz-padding-64" id="Conclusion">
+    <h5 class="viz-center">Conclusion</h5><br>
+
+        <p>
+          The above analyses show different visualization types to show how we analyze government or other resources data without knowing its legitness or accuracy. 
+          We don't know how the data is being collected, is the data manipulated or controlled by priveldege society or power or politics plays a role in these matters or not. 
+          These visualizations of poverty rate, income, and educational attainments based on gender are just examples of questions about the privacy and safety of our data or the 
+          accuracy of the data we have utilized in this project. Due to the lack of information on the lightness of the data I have used, it may be hard to conclude. Despite all 
+          the obstacles, we can conclude from the above analysis from the visuals 
+          that the more people having bachelor's degrees or higher education attainment, the lower the poverty rate in the USA.
+
+        </p>
+  </div>
+  </div>
+  </div>
+
+  <hr>
+  
+  
+ <!-- Data Source Section -->
+ <div class="viz-row " id="DataSource">
+  <div class="viz-padding-large">
+    <h5 class="viz-center">Data Sources </h5><br>
+    <div class="viz-content" style="max-width:1100px">
+    <blockquote><blockquote>
+      <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote> <blockquote> <blockquote>
+                <li>
+
+                  United States Census Bureau,
+
+
+
+                  <a href="https://www.census.gov/" title="census.gov" target="_blank" class="viz-hover-text-green">census.gov</a>
+                </li>
+                <li>
+                
+                  World Population Review,
+
+<a href="https://worldpopulationreview.com/state-rankings/poverty-rate-by-state/" title="worldpopulationreview.com" target="_blank" class="viz-hover-text-green">worldpopulationreview.com</a>
+                </li>
+                
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote></blockquote></blockquote>
+        
+  </div>
+  </div>
+
+  </div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="viz-center viz-light-grey viz-padding-32">
+  
+    
+  <p> Note: To make the website template better, the website, <a href="https://www.vizschools.com/w3css/default.asp" title="w3.CSS" target="_blank" class="viz-hover-text-green">w3.css</a> helps alot!!</p>
+
+  <p> Other coding helps have taken from the website, <a href="https://d3-graph-gallery.com/" title="d3-graph-gallery" target="_blank" class="viz-hover-text-green"> d3-graph-gallery.com</a>
+  
+</footer>
+
+</body>
+</html>
